@@ -6,6 +6,20 @@ body{
     margin: 0;
     padding: 0;
 }
+h1{
+    font-size: 0.6em;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 0.3em;
+}
+ul{
+    font-size: 0.3em;
+}
+div{
+    box-sizing: border-box;
+    padding: 20px;
+}
 section{
     position:relative;
     width:100%;
@@ -49,6 +63,6 @@ section#n5:hover~nav a[href="#n5"]
     color: #9918a5;
 }
 nav a:active{
-    background: blue;
+    background: rgb(61, 61, 235);
 
 }
