@@ -1,0 +1,30 @@
+<?php
+$job = [
+    'job_name' => ['GB', 'Бэттери Тим', 'Студия Лебедева'],
+    'job_data' => ['2022-настоящее время', '2000-2006', '1999-2000'],
+    'job_desc' => ['Много интересной работы', 'Разная работа', 'Очень много креативной работы']
+]
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Опыт работы</title>
+</head>
+<body>
+  <div class="w3-container w3-card w3-white w3-margin-bottom">
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
+
+    <?php for ($i = 0; $i < count($job['job_name']); $i++) { ?>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b><?php echo $job['job_name'][$i]; ?></b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['job_data'][$i]; ?></h6>
+            <p><?php echo $job['job_desc'][$i]; ?></p>
+            <hr>
+        </div>
+    <?php } ?>
+  </div>
+</body>
+</html>
